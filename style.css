@@ -1,0 +1,49 @@
+html {
+    background-color: greenyellow;
+    height: 100%;
+}
+
+#container {
+    height: 300px;
+    width: 325px;
+    background-color: orange;
+    font-size: 16px;
+    
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 75px 75px 75px 75px;
+    grid-template-areas:
+    ". total"
+    ". gratuity_percentage"
+    ". gratuity_amount"
+    ". grand_total"
+    ". button";
+    margin: 0 auto;
+    border: 5px solid black;
+    padding: 50px;
+}
+
+#total {
+    grid-area: total;
+}
+#gratuity_percentage {
+    grid-area: gratuity_percentage;
+}
+#gratuity_amount {
+    grid-area: gratuity_amount;
+}
+#grand_total {
+    grid-area: grand_total;
+}
+
+.input-styling {
+    height: 30px;
+    width: 200px;
+}
+
+#button {
+    grid-area: button;
+    height: 25px;
+    width: 75px;
+}
